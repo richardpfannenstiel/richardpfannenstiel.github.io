@@ -57,19 +57,43 @@ body {
     margin: auto auto auto auto;
 }
 
+.social {
+  color: white;
+  width: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.social:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
 .title {
   font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
+.title2 {
+  font-size: 20px;
+}
+
 .subtitle {
-  font-size: 1rem;
   margin-bottom: 2rem;
   color: #c0c0c0;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
   margin: 5px 0;
+}
+
+.label {
+  margin-top: 100px;
+  color: #5cb5f1;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: auto 5px 0 0;
 }
 
 .button {
@@ -89,7 +113,12 @@ body {
 }
 
 .button:hover {
+    color: #5cb5f1;
     transform: scale(1.05);
+}
+
+.light-button {
+  cursor: pointer;
 }
 
 .blob {
@@ -117,6 +146,151 @@ body {
     inset 100px 100px 0 0px #fa709a,
     inset 200px 200px 0 0px #784ba8,
     inset 300px 300px 0 0px #2b86c5;
+}
+
+.project-list {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.project {
+  height: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  text-align: start;
+  font-size: 1rem;
+  color: whitesmoke;
+  background-color: #5c9df1 100%;
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  padding: 0.8rem 1.8rem;
+  border-radius: 2rem;
+  transition: .2s ease-in-out 0s;
+  
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+/* Typewriter Effect */
+@keyframes typing {
+  0.0000%, 27% { content: ""; }
+  0.54%,26.46% { content: "a"; }
+  1.08%, 25.92% { content: "a S"; }
+  1.62%, 25.38% { content: "a So"; }
+  2.16%, 24.84% { content: "a Sof"; }
+  2.7%, 24.3% { content: "a Soft"; }
+  3.24%, 23.76% { content: "a Softw"; }
+  3.78%, 23.22% { content: "a Softwa"; }
+  4.32%, 22.68% { content: "a Softwar"; }
+  4.86%, 22.14% { content: "a Software"; }
+  5.4%, 21.6% { content: "a Software "; }
+  5.94%, 21.06% { content: "a Software E"; }
+  6.48%, 20.52% { content: "a Software En"; }
+  7.02%, 19.98% { content: "a Software Eng"; }
+  7.56%, 19.44% { content: "a Software Engi"; }
+  8.1%, 18.9% { content: "a Software Engin"; }
+  8.64%, 18.36% { content: "a Software Engine"; }
+  9.18%, 17.82% { content: "a Software Enginee"; }
+  9.72%, 17.28% { content: "a Software Engineer"; }
+
+  30%, 50.9% { content: ""; }
+  30.46%, 50.44% { content: "a"; }
+  30.92%, 49.98% { content: "an"; }
+  31.38%, 49.52% { content: "an A"; }
+  31.84%, 49.06% { content: "an Ap"; }
+  32.3%, 48.6% { content: "an App"; }
+  32.76%, 48.14% { content: "an App "; }
+  33.22%, 47.68% { content: "an App D"; }
+  33.68%, 47.22% { content: "an App De"; }
+  34.14%, 46.76% { content: "an App Dev"; }
+  34.6%, 46.3% { content: "an App Deve"; }
+  35.06%, 45.84% { content: "an App Devel"; }
+  35.52%, 45.38% { content: "an App Develo"; }
+  35.98%, 44.92% { content: "an App Develop"; }
+  36.44%, 44.46% { content: "an App Develope"; }
+  36.9%, 44% { content: "an App Developer"; }
+
+  54.7%, 74.3% { content: ""; }
+  55.05%, 73.95% { content: "a"; }
+  55.4%, 73.6% { content: "a "; }
+  55.75%, 73.25% { content: "a S"; }
+  56.1%, 72.9% { content: "a Sw"; }
+  56.45%, 72.55% { content: "a Swi"; }
+  56.8%, 72.2% { content: "a Swif"; }
+  57.15%, 71.85% { content: "a Swift"; }
+  57.5%, 71.5% { content: "a Swift "; }
+  57.85%, 71.15% { content: "a Swift E"; }
+  58.2%, 70.8% { content: "a Swift En"; }
+  58.55%, 70.45% { content: "a Swift Ent"; }
+  58.9%, 70.1% { content: "a Swift Enth"; }
+  59.25%, 69.75% { content: "a Swift Enthu"; }
+  59.6%, 69.4% { content: "a Swift Enthus"; }
+  59.95%, 69.05% { content: "a Swift Enthusi"; }
+  60.3%, 68.7% { content: "a Swift Enthusia"; }
+  60.65%, 68.35% { content: "a Swift Enthusias"; }
+  61%, 68% { content: "a Swift Enthusiast"; }
+
+  77.72%, 97.16% { content: ""; }
+  78.16%, 96.72% { content: "a"; }
+  78.6%, 96.28% { content: "a "; }
+  79.04%, 95.84% { content: "a U"; }
+  79.48%, 95.4% { content: "a UI"; }
+  79.92%, 94.96% { content: "a UI/"; }
+  80.36%, 94.52% { content: "a UI/U"; }
+  80.8%, 94.08% { content: "a UI/UX"; }
+  81.24%, 93.64% { content: "a UI/UX "; }
+  81.68%, 93.2% { content: "a UI/UX E"; }
+  82.12%, 92.76% { content: "a UI/UX Ex"; }
+  82.56%, 92.32% { content: "a UI/UX Exp"; }
+  83%, 91.88% { content: "a UI/UX Expe"; }
+  83.44%, 91.44% { content: "a UI/UX Exper"; }
+  83.88%, 91% { content: "a UI/UX Expert"; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+  
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 22s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+  color: white;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "a Software Engineer"; }
+    25% { content: "an App Developer"; }
+    50% { content: "a Swift Enthusiast"; }
+    75% { content: "UI/UX Expert"; }
+  }
+
+  .typewriter::before {
+    content: "a Software Engineer";
+    animation: sequencePopup 15s linear infinite;
+  }
 }
 
 @-webkit-keyframes move {
