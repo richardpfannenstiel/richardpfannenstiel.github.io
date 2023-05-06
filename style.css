@@ -57,18 +57,6 @@ body {
     margin: auto auto auto auto;
 }
 
-.social {
-  color: white;
-  width: 30px;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-.social:hover {
-  filter: brightness(1);
-  transform: scale(1.05);
-}
-
 .title {
   font-size: 2.2rem;
   margin-bottom: 1rem;
@@ -97,14 +85,15 @@ body {
 }
 
 .button {
-  background: none;
   border: none;
   text-align: center;
   font-size: 1rem;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  z-index: 10;
   color: whitesmoke;
-  background-color: #5c9df1 100%;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
   cursor: pointer;
@@ -159,14 +148,15 @@ body {
   min-height: 150px;
   display: flex;
   flex-direction: column;
-  background: none;
   border: none;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  -webkit-backdrop-filter: blur( 18px );
+  z-index: 10;
+  color: whitesmoke;
   text-align: start;
   font-size: 1rem;
-  color: whitesmoke;
-  background-color: #5c9df1 100%;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
   padding: 0.8rem 1.8rem;
   border-radius: 2rem;
   transition: .2s ease-in-out 0s;
